@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    android:orientation="vertical"
+    tools:context=".streamingapp.SitelistActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Home"
+        app:titleTextColor="#FFFFFF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="RS Solution"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/spinner_border">
+
+        <Spinner
+            android:id="@+id/siteSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="10dp"
+            android:src="@drawable/ic_down" />
+
+    </RelativeLayout>
+
+
+    <!--  <Spinner
+          android:layout_above="@+id/btnFetchSite"
+          android:layout_centerInParent="true"
+          android:id="@+id/siteSpinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="22dp"
+          android:layout_marginBottom="35dp"/>
+  -->
+    <Button
+        android:id="@+id/btnFetchSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        android:text="Fetch Site Details"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:typeface="normal" />
+
+
+</LinearLayout>

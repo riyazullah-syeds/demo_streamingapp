@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Streaming App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="rules_array">
+        <item>Default</item>
+        <item>Highlight Multiples of 3</item>
+        <item>Highlight Prime Numbers</item>
+    </string-array>
+</resources>
